@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="/css/normalize.css" as="style" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preload" href="/css/index.css" as="style" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Front End Store</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="/index.html">
+        <div class="header__logo">
+          <img src="/assets/img/logo.svg" alt="Logo" />
+        </div>
+      </a>
+    </header>
+    <nav class="navbar">
+      <a class="navbar__link" href="/index.html">TIENDA</a>
+      <a class="navbar__link" href="/about.html">NOSOTROS</a>
+    </nav>
+
+    <section class="product-page">
+      <h2 class="product-page__title">TypeScript</h2>
+      <div class="product-page__container">
+        <div class="product-page__image">
+          <img src="/assets/img/tshirt-ts.jpg" alt="" />
+        </div>
+        <div class="product-page__content">
+          <p class="product-page__info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad eveniet
+            quia vitae beatae voluptatum esse tempora quisquam aliquam, culpa
+            doloribus eius, suscipit, laudantium vero consequatur et maiores
+            consequuntur accusamus ea voluptate. Temporibus ea beatae dolorum
+            saepe impedit aliquid iste?
+          </p>
+          <form class="product-page__form">
+            <div class="product-page__options">
+              <select
+                name="product-size"
+                id="product-size"
+                class="product-page__size"
+              >
+                <option disabled selected>- - Seleccionar Talla - -</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <input type="number" max="50" class="product-page__amount" />
+            </div>
+            <input
+              class="product-page__button"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>FRONTEND STORE - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
